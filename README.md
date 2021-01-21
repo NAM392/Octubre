@@ -24,6 +24,15 @@ Ayudas:
 https://sqliteonline.com/
 
 4. Subir los cambios al proyecto forkeado
-5. Enviarnos el link del proyecto forkeado
 
+5. Compartinos el proyecto forkeado
+
+Para compartirnos tu proyecto, Ir a **Merge Requests** > **New Merge Request** y seguí las indicaciones de estas capturas
+
+![alt text](assets/mr1.png "Merge Request 1")
+
+Enviar
+
+
+![alt text](assets/mr2.png "Merge Request 2")
 
