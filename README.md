@@ -23,15 +23,15 @@ https://www.youtube.com/watch?v=Zab2WsNqy6A
 
 3. Resolver los ejercicios
 
-- C# Basico (Consignas en el archivo [`Ejercicios C#/Program.cs`](https://gitlab.com/octubre/programmer-applicants-test/-/blob/master/Ejercicios%20C%23/Program.cs))
+- C# Basico (3 consignas en el archivo [`Ejercicios C#/Program.cs`](https://gitlab.com/octubre/programmer-applicants-test/-/blob/master/Ejercicios%20C%23/Program.cs))
 
-- C# Herencia (Consignas en el archivo [`Ejercicios Herencia/InheritanceExercise/Program.cs`](https://gitlab.com/octubre/programmer-applicants-test/-/blob/master/Ejercicios%20Herencia/InheritanceExercise/Program.cs))
+- C# Herencia (12 consignas en el archivo [`Ejercicios Herencia/InheritanceExercise/Program.cs`](https://gitlab.com/octubre/programmer-applicants-test/-/blob/master/Ejercicios%20Herencia/InheritanceExercise/Program.cs))
 
-- SQL Basico (Consignas al final del archivo [`Ejercicios SQL/Ejercicio SQL 2 - Con Inserts.sql`](https://gitlab.com/octubre/programmer-applicants-test/-/blob/master/Ejercicios%20SQL/Ejercicio%20SQL%202%20-%20Con%20Inserts.sql))
+- SQL Basico (10 consignas en el archivo [`Ejercicios SQL/Ejercicio SQL 2 - Con Inserts.sql`](https://gitlab.com/octubre/programmer-applicants-test/-/blob/master/Ejercicios%20SQL/Ejercicio%20SQL%202%20-%20Con%20Inserts.sql))
 
 Ayudas:
 
-https://sqliteonline.com/
+Podes resolver este ejercicio usando la aplicación web https://sqliteonline.com/
 
 4. Subir los cambios al proyecto forkeado
 

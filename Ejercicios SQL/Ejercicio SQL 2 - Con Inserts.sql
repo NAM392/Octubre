@@ -1,4 +1,6 @@
 ﻿-- Ejercicio SQL
+-- Antes de empezar con las consignas, crea las tablas e inserta los datos iniciales mediante correr los siguientes comandos CREATE e INSERT
+-- Las 10 consignas están al final del archivo
 
 -- artists (artistid,name)
 
