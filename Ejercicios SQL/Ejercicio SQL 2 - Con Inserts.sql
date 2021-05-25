@@ -4,6 +4,9 @@
 
 -- artists (artistid,name)
 
+CREATE DATABASE Octubre
+USE Octubre
+
 create table artists
 (
 artistid bigint not null,
@@ -54,27 +57,76 @@ values (1, 'Moscas en la casa', 1999, 1),
 (19, 'Beautiful day', 2009, 6),
 (20, 'Toto IV', 2003, 7),
 (21, 'Animal', 2010, 7 ),
-(22, 'Lalala', 1965, 9),
-(23, 'Yeah yeah', 1968, 9),
+(22, 'Lalala', 1965, 9),(23, 'Yeah yeah', 1968, 9),
 (24, 'No reconocido', 2018, null);
 
 
--- 1) Listar todos los artistas.
+			-- 1) Listar todos los artistas.
+	SELECT name
+	FROM   artists
 
--- 2) Listar los artistas cuyos nombres comienzan con 'L'.
+	-- 2) Listar los artistas cuyos nombres comienzan con 'L'.
+	SELECT *
+	FROM   artists
+	WHERE  NAME LIKE 'L%'
 
--- 3) Listar los albums del artista 'Dos minutos'.
+	-- 3) Listar los albums del artista 'Dos minutos'.
+	SELECT name
+	FROM   albums
+	WHERE  artistid LIKE (SELECT artistid
+						  FROM   artists
+						  WHERE  NAME = 'Dos minutos')
 
--- 4) Listar los artistas que sacaron un album en el 2010.
+	-- 4) Listar los artistas que sacaron un album en el 2010.
+	SELECT ar.NAME
+	FROM   artists AS ar
+		   JOIN albums AS al
+			 ON ar.artistid = al.artistid
+				AND al.year = 2010
 
--- 5) Listar los artistas que tienen nombres que comienzan con 'G' o que sacaron un album en el 2005.
+	-- 5) Listar los artistas que tienen nombres que comienzan con 'G' o que sacaron un album en el 2005.
+	SELECT ar.NAME
+	FROM   artists AS ar
+		   JOIN albums AS al
+			 ON ar.artistid = al.artistid
+	WHERE  ar.NAME LIKE 'G%'
+			OR al.year = 2005
+	GROUP  BY ar.NAME
 
--- 6) Listar los albums que no tienen un artista asociado.
+	-- 6) Listar los albums que no tienen un artista asociado.
+	SELECT *
+	FROM   albums AS al
+	WHERE  al.artistid IS NULL
 
--- 7) Listar los albums de los artistas 'Shakira, Madonna, Los Chalchaleros y Gardel'. 
+	-- 7) Listar los albums de los artistas 'Shakira, Madonna, Los Chalchaleros y Gardel'. 
+	SELECT ar.NAME,
+		   al.NAME
+	FROM   artists AS ar
+		   JOIN albums AS al
+			 ON ar.artistid = al.artistid
+	WHERE  ar.NAME IN ( 'Shakira', 'Madonna', 'Los Chalchaleros', 'Gardel' )
 
--- 8) Listar la cantidad de albums que tiene cada artista.
+	-- 8) Listar la cantidad de albums que tiene cada artista.
+	SELECT ar.NAME,
+		   Count(al.NAME) AS cantidad_albumes
+	FROM   artists AS ar
+		   JOIN albums AS al
+			 ON ar.artistid = al.artistid
+	GROUP  BY ar.NAME
 
--- 9) Listar los artistas que no tienen albums.
+	-- 9) Listar los artistas que no tienen albums.
+	SELECT ar.NAME
+	FROM   artists AS ar
+	WHERE  NOT EXISTS (SELECT NULL
+					   FROM   albums AS al
+					   WHERE  al.artistid = ar.artistid)
 
--- 10) Listar los artistas que tienen más de 1 album. (Usar Group by y having).
+	-- 10) Listar los artistas que tienen más de 1 album. (Usar Group by y having).
+	SELECT ar.NAME,
+		   Count(al.artistid) AS cantidad_albumes
+	FROM   artists AS ar
+		   JOIN albums AS al
+			 ON ar.artistid = al.artistid
+	GROUP  BY al.artistid,
+			  ar.NAME
+	HAVING Count(al.artistid) > 1 

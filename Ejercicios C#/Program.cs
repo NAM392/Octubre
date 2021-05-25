@@ -13,15 +13,29 @@ namespace Entrevista
 
             // 1) Desarrollar un método que reciba la lista de clientes y retorne el cliente que más gastó. Mostrar sus datos en pantalla.
 
+             Cliente.ClienteMasGasto(clientes);
 
             // 2) Desarrollar un método que reciba la lista de clientes y retorne cuántos de ellos podrían haber aprovechado una caja rápida
-            // (máximo de 15 unidades) si la hubiera. Mostrar resultado por pantalla.                        
+            // (máximo de 15 unidades) si la hubiera. Mostrar resultado por pantalla.
 
+             Cliente.CajaRapida(clientes);
 
             // 3) Desarrollar un método que permita conocer si algún cliente gastó por lo menos el doble que cada uno de los otros clientes,
             // ya que en dicho caso se le otorgará un descuento del 50% en todos sus productos.
-            // Mostrar por pantalla el cliente y el monto total del descuento que recibiría.
-            
+            // Mostrar por pantalla el cliente y el monto total del descuento que recibiría.     
+
+            Cliente.ClienteGastoDoble(clientes);
+
+
+
+
+
+
+
+
+
+
+            Console.ReadKey();
 
         }
 

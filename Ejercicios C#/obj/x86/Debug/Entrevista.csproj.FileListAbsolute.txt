@@ -1,0 +1,7 @@
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios C#\bin\Debug\Entrevista.exe.config
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios C#\bin\Debug\Entrevista.exe
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios C#\bin\Debug\Entrevista.pdb
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios C#\obj\x86\Debug\Entrevista.csprojAssemblyReference.cache
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios C#\obj\x86\Debug\Entrevista.csproj.CoreCompileInputs.cache
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios C#\obj\x86\Debug\Entrevista.exe
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios C#\obj\x86\Debug\Entrevista.pdb

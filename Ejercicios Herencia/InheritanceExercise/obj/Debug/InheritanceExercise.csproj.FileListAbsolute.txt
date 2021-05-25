@@ -1,0 +1,7 @@
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios Herencia\InheritanceExercise\obj\Debug\InheritanceExercise.csprojAssemblyReference.cache
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios Herencia\InheritanceExercise\obj\Debug\InheritanceExercise.csproj.CoreCompileInputs.cache
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios Herencia\InheritanceExercise\bin\Debug\InheritanceExercise.exe.config
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios Herencia\InheritanceExercise\bin\Debug\InheritanceExercise.exe
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios Herencia\InheritanceExercise\bin\Debug\InheritanceExercise.pdb
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios Herencia\InheritanceExercise\obj\Debug\InheritanceExercise.exe
+Z:\Grupo_Octubre\programmer-applicants-test\Ejercicios Herencia\InheritanceExercise\obj\Debug\InheritanceExercise.pdb
